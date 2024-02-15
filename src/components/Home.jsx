@@ -1,18 +1,9 @@
-const Home = () => {
+export default function Home() {
   return (
-    <div>
-      <div className="flex justify-center item-center h-screen text-center flex-col ">
-        <h1 className="text-4xl font-bold text-purple-400">
-          Welcome to Technical SEO
-        </h1>
-        <ol>
-          <li>sitemap.xml</li>
-          <li>sitemap.html</li>
-          <li>robots.txt</li>
-        </ol>
-      </div>
+    <div className="mt-16 grid place-content-center h-screen">
+      <h1 className="text-4xl font-semibold text-blue-500 table border-2 p-5 rounded-lg">
+        welcome to awesome place
+      </h1>
     </div>
   );
-};
-
-export default Home;
+}

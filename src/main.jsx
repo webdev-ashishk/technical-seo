@@ -6,6 +6,7 @@ import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
 import Home from "./components/Home.jsx";
 import Service from "./components/Service.jsx";
+import TechnicalSeo from "./components/TechnicalSeo.jsx";
 import "./index.css";
 const router = createBrowserRouter([
   {
@@ -14,8 +15,12 @@ const router = createBrowserRouter([
 
     children: [
       {
-        path: "/home",
+        path: "/",
         element: <Home />,
+      },
+      {
+        path: "/techseo",
+        element: <TechnicalSeo />,
       },
       {
         path: "/about",

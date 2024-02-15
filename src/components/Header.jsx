@@ -6,7 +6,10 @@ export default function Header() {
       <nav className="border-2 bg-gray-400 pl-6">
         <ul className="flex gap-8 font-mono text-[40px] font-bold flex-end">
           <li>
-            <Link to="/home">TechnicalSEO</Link>
+            <Link to="/">HOME</Link>
+          </li>
+          <li>
+            <Link to="/techseo">TechnicalSEO</Link>
           </li>
           <li>
             <Link to="/about">About</Link>

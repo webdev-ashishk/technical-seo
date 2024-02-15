@@ -1,30 +1,37 @@
+import { Outlet } from "react-router-dom";
 import "./App.css";
-
+import Header from "./components/Header";
 function App() {
   return (
-    <main>
-      <h1
-        style={{
-          textAlign: "center",
-          fontSize: "100px",
-          fontStyle: "bold",
-        }}
-      >
-        Welcome to Technical SEO
-      </h1>
-      <ol
-        style={{
-          fontSize: "40px",
-          border: "2px solid red",
-          width: "600px",
-          margin: "auto",
-          borderRadius: "10px",
-        }}
-      >
-        <li>sitemap.xml</li>
-        <li>sitemap.html</li>
-        <li>robots.txt</li>
-      </ol>
+    <main className="h-screen">
+      <Header />
+      <div className="main">
+        <h1
+          style={{
+            textAlign: "center",
+            fontSize: "50px",
+            fontStyle: "bold",
+          }}
+        >
+          Welcome to Technical SEO
+        </h1>
+        <ol
+          style={{
+            fontSize: "20px",
+            border: "2px solid red",
+            width: "600px",
+            margin: "auto",
+            borderRadius: "10px",
+          }}
+        >
+          <li>sitemap.xml</li>
+          <li>sitemap.html</li>
+          <li>robots.txt</li>
+        </ol>
+      </div>
+      <div>
+        <Outlet />
+      </div>
     </main>
   );
 }

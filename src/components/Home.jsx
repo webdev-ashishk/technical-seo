@@ -1,25 +1,11 @@
 const Home = () => {
   return (
     <div>
-      <div className="main">
-        <h1
-          style={{
-            textAlign: "center",
-            fontSize: "50px",
-            fontStyle: "bold",
-          }}
-        >
+      <div className="flex justify-center item-center h-screen text-center flex-col ">
+        <h1 className="text-4xl font-bold text-purple-400">
           Welcome to Technical SEO
         </h1>
-        <ol
-          style={{
-            fontSize: "20px",
-            border: "2px solid red",
-            width: "600px",
-            margin: "auto",
-            borderRadius: "10px",
-          }}
-        >
+        <ol>
           <li>sitemap.xml</li>
           <li>sitemap.html</li>
           <li>robots.txt</li>

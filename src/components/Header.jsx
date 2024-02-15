@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div>
+    <div className="fixed top-0 w-full">
       <nav className="border-2 bg-gray-400 pl-6">
         <ul className="flex gap-8 font-mono text-[40px] font-bold flex-end">
           <li>

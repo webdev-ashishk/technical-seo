@@ -9,6 +9,7 @@ export default function TechnicalSeo() {
           <li>sitemap.xml</li>
           <li>sitemap.html</li>
           <li>robots.txt</li>
+          <li>open graph</li>
         </ol>
       </div>
     </div>

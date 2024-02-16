@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
 import Home from "./components/Home.jsx";
+import NotFound from "./components/NotFound.jsx";
 import Service from "./components/Service.jsx";
 import TechnicalSeo from "./components/TechnicalSeo.jsx";
 import "./index.css";
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <Service />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },

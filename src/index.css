@@ -7,3 +7,34 @@ body {
   color: white;
   background-color: black;
 }
+.contact {
+  border: 2px solid red;
+  padding: 50px;
+  font-size: 22px;
+}
+
+@keyframes increaseOverlayDiv {
+  0% {
+    opacity: 1;
+    transform: scaleX(0);
+  }
+  50% {
+    background-color: green;
+    transform: scaleX(2);
+  }
+  100% {
+    background-color: red;
+    opacity: 1;
+    transform: scaleX(0);
+  }
+}
+.contact:hover {
+  cursor: pointer;
+}
+.overlay {
+  margin-left: 100px;
+}
+button:hover {
+  animation-name: increaseOverlayDiv;
+  animation-duration: 5s;
+}
